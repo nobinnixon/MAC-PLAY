@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Cafe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f6f6f6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-weight: 700;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .icon {
+            width: 200px;
+            height: 200px;
+            display: block;
+            margin: 0 auto 20px;
+            animation: bounceIn 1s ease;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+            color: #555;
+            font-size: 18px;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounceIn {
+            from, 20%, 40%, 60%, 80%, to {
+                animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            }
+
+            0% {
+                opacity: 0;
+                transform: scale3d(0.3, 0.3, 0.3);
+            }
+
+            20% {
+                transform: scale3d(1.1, 1.1, 1.1);
+            }
+
+            40% {
+                transform: scale3d(0.9, 0.9, 0.9);
+            }
+
+            60% {
+                opacity: 1;
+                transform: scale3d(1.03, 1.03, 1.03);
+            }
+
+            80% {
+                transform: scale3d(0.97, 0.97, 0.97);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale3d(1, 1, 1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="icon animate__animated animate__bounceIn" src="https://motopress.com/wp-content/uploads/2023/05/best-contact-us-page-designs.jpg" alt="Cafe Icon">
+        <h1 class="animate__animated animate__fadeInUp">Contact Us</h1>
+        <div class="contact-info animate__animated animate__fadeInUp">
+            <p><strong>Address:</strong> Kairali Building,Kairali Junction,Mammiyur</p>
+            <p><strong>Phone:</strong> +1234567890</p>
+            <p><strong>Instagram:</strong> @cafeaddict</p>
+            <p><strong>Email:</strong> info@cafewebsite.com</p>
+        </div>
+    </div>
+</body>
+</html>
