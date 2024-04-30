@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Cafe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f6f6f6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-weight: 700;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .event {
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .event h2 {
+            color: #2c3e50;
+            font-weight: 700;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .event p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="animate__animated animate__fadeInUp">Upcoming Events</h1>
+
+        <div class="event animate__animated animate__fadeInUp">
+            <h2>Live Music Night</h2>
+            <p>Join us for a delightful evening of live music featuring local artists. Sit back, relax, and enjoy great tunes along with your favorite coffee or cocktail. Date: March 15th, 2024. Time: 7:00 PM onwards.</p>
+        </div>
+
+        <div class="event animate__animated animate__fadeInUp">
+            <h2>Coffee Tasting Workshop</h2>
+            <p>Discover the art and science behind coffee tasting in our interactive workshop. Learn about different coffee varieties, brewing methods, and flavor profiles. Date: March 22nd, 2024. Time: 10:00 AM - 12:00 PM.</p>
+        </div>
+
+        <div class="event animate__animated animate__fadeInUp">
+            <h2>Brunch Special</h2>
+            <p>Indulge in our delicious brunch specials featuring gourmet dishes and refreshing beverages. Perfect for a lazy Sunday morning with friends and family. Date: March 30th, 2024. Time: 9:00 AM - 2:00 PM.</p>
+        </div>
+    </div>
+</body>
+</html>
